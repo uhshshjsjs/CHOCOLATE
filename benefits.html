@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Benefits</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chocolate-benefits.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CHOCOLATE BENEFITS</h1>
+        <nav>
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="benefits.html">Benefits</a>
+                <a href="history.html">History</a>
+                <a href="types.html">Types</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Benefits Section -->
+    <main>
+        <section class="benefits">
+            <h2>Chocolate Benefits</h2>
+
+            <div class="benefits-card">
+                <div class="chocolate-image">
+                    <img src="https://images.unsplash.com/photo-1599599811214-3d44be99547f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hvY29sYXRlfGVufDB8fDB8fHww" alt="Chocolate Image">
+                </div>
+
+                <div class="benefits-text">
+                    <p>Chocolate brings happiness and has health benefits such as improving mood, reducing stress, and providing energy!</p>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <label for="chocolate-type">Choose the type of chocolate:</label>
+            <select id="chocolate-type" onchange="showBenefit()">
+                <option value="">Select a chocolate type</option>
+                <option value="dark">Dark</option>
+                <option value="milk">Milk</option>
+                <option value="white">White</option>
+            </select>
+
+            <div class="benefits-container">
+                <div id="chocolate-benefit">
+                    <p id="chocolate-benefit-text">Select a type of chocolate to learn its specific benefits!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chocolate World</p>
+    </footer>
+
+</body>
+</html>
